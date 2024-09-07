@@ -20,13 +20,15 @@ function pesquisar() {
     let titulo = "";
     let descricao = "";
     let tags = "";
+    let cinematrografico = "";
 
     // Itera sobre cada dado da lista de dados
     for (let dado of dados) {
         titulo = dado.titulo.toLowerCase();
         descricao = dado.descricao.toLowerCase();
         tags = dado.tags.toLowerCase();
-        if(titulo.includes(resPesquisa) || descricao.includes(resPesquisa) || tags.includes(resPesquisa)){
+        cinematrografico = dado.cinematrografico.toLocaleLowerCase();
+        if(titulo.includes(resPesquisa) || descricao.includes(resPesquisa) || tags.includes(resPesquisa) || cinematrografico.includes(resPesquisa)){
             // Cria um novo elemento HTML para cada resultado
             resultados += `
             <div class="item-resultado">
@@ -34,6 +36,7 @@ function pesquisar() {
                     <a href="#" target="_blank">${dado.titulo}</a>
                 </h2>
                 <p class="descricao-meta">${dado.descricao}</p>
+                <p <span class=".novo-filme">${dado.cinematrografico}</span></p>
                 <a href=${dado.link} target="_blank">Mais informações</a>
             </div>`;
     }
