@@ -22,3 +22,5 @@ Modificações feitas:
 - Adicionamento de "Produções cinematográficas", uma lista filmes que fizeram em referencia aos resilientes.
 - Ajuste de espaçamento,centralização e controle com aumento e diminuição de zoom.
 - Adicionamento de imagem de fundo.
+
+Link Vercel https://imersao-resilientes-al.vercel.app/
